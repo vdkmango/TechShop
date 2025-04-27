@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp6
+namespace Techshop
 {
     enum Brand { Acer, Asus, Lenovo, Microsoft }
     abstract class Device : Product

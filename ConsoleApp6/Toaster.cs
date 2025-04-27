@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace ConsoleApp6
+namespace Techshop
 {
     internal class Toaster : Product
     {

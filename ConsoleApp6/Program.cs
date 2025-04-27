@@ -1,3 +1,3 @@
-﻿using ConsoleApp6;
+﻿using Techshop;
 
 PC pc = new PC();

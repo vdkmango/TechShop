@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp6
+namespace Techshop
 {
     enum Color { Red, Green, Blue, Yellow, Orange }
     internal class Accessory : Product
