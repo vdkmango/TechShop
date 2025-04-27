@@ -20,7 +20,13 @@ namespace ConsoleApp6
             _password = Password;
             _email = Email;
             _address = Address;
+            _zipcode = ZipCode;
             Console.WriteLine("Succesfully logged in");
+        }
+
+        public void GetUserInfo()
+        {
+            Console.WriteLine($"User: {_username}, Password: {_password}, Email: {_email}, Adress: {_address}, ZipCode: {_zipcode}");
         }
     }
 }
