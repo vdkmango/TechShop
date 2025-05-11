@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Techshop
+namespace Techshop.Models
 {
     internal class Admin : LoginInformation
     {
@@ -20,6 +20,6 @@ namespace Techshop
             Console.WriteLine("Succesfully logged in");
         }
 
-        
+
     }
 }

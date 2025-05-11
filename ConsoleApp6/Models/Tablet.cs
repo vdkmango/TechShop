@@ -6,8 +6,10 @@ using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Techshop.Enums;
 
-namespace Techshop
+
+namespace Techshop.Models
 {
     abstract class Tablet : Device
     {

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Techshop.Enums;
 
-namespace Techshop
+namespace Techshop.Models
 {
-    enum Brand { Acer, Asus, Lenovo, Microsoft }
-    abstract class Device : Product
+    abstract class Device : Product, IDiscountable, IComparable<Device>
     {
         protected uint _ram;
 
@@ -21,7 +21,7 @@ namespace Techshop
             Console.WriteLine("Device was created");
         }
         public Device(string Name, Brand Brand, decimal Price, uint RAM, uint Quantity, string Size)
-            :base(Name, Brand, Price, Quantity, Size)
+            : base(Name, Brand, Price, Quantity, Size)
         {
             _name = Name;
             _brand = Brand;
@@ -39,6 +39,13 @@ namespace Techshop
         }
 
         abstract public void Sale();
+
+        public int CompareTo(Device? other)
+        {
+            if (RAM < other.RAM) return -1;
+            else if (RAM > other.RAM) return 1;
+            else return 0;
+        }
 
         public virtual void Sale(decimal percentage)
         {

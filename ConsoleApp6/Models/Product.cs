@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Techshop.Enums;
 
-namespace Techshop
+namespace Techshop.Models
 {
     internal class Product
     {
@@ -23,6 +24,7 @@ namespace Techshop
         public string Name
         {
             get => _name;
+            init => _name = value;
         }
 
         public Brand Brand
@@ -33,7 +35,14 @@ namespace Techshop
         public decimal Price
         {
             get => _price;
-            set => _price = value;
+            set
+            {
+                if (_price < 0)
+                {
+                    Console.WriteLine("Invalid Input!");
+                }
+                _price = value;
+            }
         }
 
         public string Size
@@ -44,11 +53,11 @@ namespace Techshop
         { }
         protected Product(string Name, Brand Brand, decimal Price, uint Quantity, string Size)
         {
-            this._name = Name;
-            this._brand = Brand;
-            this._price = Price;
-            this._quantity = Quantity;
-            this._size = Size;  
+            _name = Name;
+            _brand = Brand;
+            _price = Price;
+            _quantity = Quantity;
+            _size = Size;
         }
     }
 }

@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Techshop.Enums;
 
-namespace Techshop
+namespace Techshop.Models
 {
     internal class Keyboard : Accessory
     {

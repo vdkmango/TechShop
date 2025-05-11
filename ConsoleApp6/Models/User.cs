@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Techshop
+namespace Techshop.Models
 {
     internal class User : LoginInformation
     {
@@ -14,7 +14,7 @@ namespace Techshop
 
         }
         public User(string Username, string Password, string Email, string Address, int ZipCode)
-            :base(Username, Password, Email, Address, ZipCode)
+            : base(Username, Password, Email, Address, ZipCode)
         {
             _username = Username;
             _password = Password;

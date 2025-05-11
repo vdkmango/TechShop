@@ -3,26 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using Techshop.Enums;
 
-namespace Techshop
+
+namespace Techshop.Models
 {
-    internal class Laptop : Device
+    internal class SmartPhone : Device
     {
-        public Laptop()
+        public SmartPhone()
         {
-            Console.WriteLine("Laptop was created");
+            Console.WriteLine("Smartphone was created");
         }
 
-        public Laptop(string Name, Brand Brand, decimal Price, uint RAM, uint Quantity, string Size)
+        public SmartPhone(string Name, Brand Brand, decimal Price, uint RAM, uint Quantity, string Size)
             : base(Name, Brand, Price, RAM, Quantity, Size)
         {
             _name = Name;
             _brand = Brand;
             _price = Price;
             _ram = RAM;
-            _size = Size;
             _quantity = Quantity;
-            Console.WriteLine("Laptop was created");
+            _size = Size;
+            Console.WriteLine("Smartphone was created");
         }
 
         public override void Sale()

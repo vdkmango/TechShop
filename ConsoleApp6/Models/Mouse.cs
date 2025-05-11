@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Techshop.Enums;
 
-namespace Techshop
+namespace Techshop.Models
 {
-    internal class Headset : Accessory
+    internal class Mouse : Accessory
     {
-        public Headset()
+        public Mouse()
         {
-            Console.WriteLine("Headset was created");
+            Console.WriteLine("Smartphone was created");
         }
 
-        public Headset(string Name, Brand Brand, decimal Price, Color Color, uint Quantity, string Size, bool IsWireless)
+        public Mouse(string Name, Brand Brand, decimal Price, Color Color, uint Quantity, string Size, bool IsWireless)
             : base(Name, Brand, Price, Color, Quantity, Size, IsWireless)
         {
             _name = Name;
@@ -23,7 +24,7 @@ namespace Techshop
             _quantity = Quantity;
             _size = Size;
             _isWireless = IsWireless;
-            Console.WriteLine("Headset was created");
+            Console.WriteLine("Mouse was created");
         }
     }
 }

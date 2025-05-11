@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Techshop.Enums;
 
-namespace Techshop
+
+namespace Techshop.Models
 {
     internal class PC : Device
     {
@@ -14,10 +16,10 @@ namespace Techshop
         }
 
         public PC(string Name, Brand Brand, decimal Price, uint RAM, uint Quantity, string Size)
-            :base (Name, Brand, Price, RAM, Quantity, Size)
+            : base(Name, Brand, Price, RAM, Quantity, Size)
         {
             _name = Name;
-            _brand = Brand; 
+            _brand = Brand;
             _price = Price;
             _ram = RAM;
             _size = Size;

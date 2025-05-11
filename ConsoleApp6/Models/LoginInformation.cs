@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Techshop
+namespace Techshop.Models
 {
     internal class LoginInformation
     {
@@ -35,10 +35,7 @@ namespace Techshop
             get => _zipcode;
         }
 
-        public LoginInformation()
-        {
-            
-        }
+        public LoginInformation() { }
 
         public LoginInformation(string Username, string Password, string Email, string Address, int ZipCode)
         {

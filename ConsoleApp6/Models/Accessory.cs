@@ -4,8 +4,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Techshop.Enums;
 
-namespace Techshop
+namespace Techshop.Models
 {
     enum Color { Red, Green, Blue, Yellow, Orange }
     internal class Accessory : Product
@@ -25,7 +26,7 @@ namespace Techshop
 
         public Accessory()
         {
-            
+
         }
 
         public Accessory(string Name, Brand Brand, decimal Price, Color Color, uint Quantity, string Size, bool IsWireless)
